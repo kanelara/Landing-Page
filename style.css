@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #8B0000;
+  color: #fff;
+}
+
+.header .nav a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .btn {
+  background: #ffcc00;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #000;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: #f8f4f0;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .highlight {
+  color: #8B0000;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: #8B0000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Menu */
+.menu {
+  padding: 2rem;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Reservation */
+.reservation {
+  padding: 2rem;
+  text-align: center;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 0.8rem;
+}
+
+.reservation input, 
+.reservation button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation button {
+  background: #8B0000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-list {
+    flex-direction: column;
+  }
+}
